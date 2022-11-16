@@ -1,6 +1,9 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+header {
+    border: 1px solid #DEDEDE;
+}
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -35,6 +38,9 @@ body {
     color: #443737;
     text-decoration: none;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a::after {
     display: block;
     content: '';
@@ -53,6 +59,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-text {
     font-family: 'Open Sans';
@@ -86,29 +93,37 @@ body {
     background-position: center center;
     padding: 142px 0px;
     color: #FFFFFF;  
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     list-style-type: none;
     padding: 0;
     margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
 }
 .breadcrumbs a {
 font-family: 'Open Sans';
 font-weight: 400;
 font-size: 15px;
-line-height: 20px;
 
 color: #DEDEDE;
 text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
 }
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
+}    
 .breadcrumbs li:first-child a::before {
     display: none;
 }
@@ -116,8 +131,8 @@ text-decoration: none;
     font-weight: 700;
     font-size: 79px;
     line-height: 108px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 .description {
     font-family: 'Open Sans';
@@ -127,4 +142,56 @@ text-decoration: none;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+   
+    
+}
+.banner-title { 
+    max-width: 157px;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.banner-title span {
+    display: block;
+    max-width: 58px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px 19px;
+    background: #F37335;
+    border-radius: 14px;
+    margin-bottom: 7px;
+}
+.banner-text {
+    max-width: 307px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FAF9F9;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+.banner-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1E2F40;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 26px;
+    display: inline-block;
+    background-color: #FBB731;
+    border-radius: 5px;
 }
