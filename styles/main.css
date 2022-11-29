@@ -154,7 +154,7 @@ text-decoration: none;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
 }
 .banner-title { 
@@ -201,10 +201,14 @@ text-decoration: none;
     background-color: #FBB731;
     border-radius: 5px;
     border: 1px solid #FBB731;
+    transition: 0.3s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -287,6 +291,7 @@ text-decoration: none;
     border-radius: 5px;
     border-color: transparent;
     cursor: pointer;
+    transition: 0.3s;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -298,7 +303,6 @@ text-decoration: none;
     background: url(../images/cart-menu.svg);
     margin-top: 7px;
     margin-bottom: 7px;
-    /*margin-left: 24px;*/
 }
 .menu-grid-text {
     font-weight: 700;
@@ -348,7 +352,8 @@ text-decoration: none;
 .footer-list a {
     color: #DEDEDE;
     text-decoration: none;
-    font-weight: 400;  
+    font-weight: 400;
+    transition: 0.3s;  
 }
 .footer-list a:hover {
     color: #FBB731;
@@ -368,6 +373,7 @@ text-decoration: none;
     line-height: 38px;
     text-transform: uppercase;
     color: #FBB731;
+    transition: 0.3s;
 }
 .footer-list-tel a:hover {
     color: #DEDEDE;
@@ -377,6 +383,31 @@ text-decoration: none;
     margin-top: -4px;
     list-style-type: none;
 }
+.button-up {
+    display: block;
+    background-image: url(../images/page-up1.svg);
+    width: 58px;
+    height: 57px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom:240px;
+    right: 25px;
+    transition: 1.5s;
+}
+.button-up:hover {
+    background-image: url(../images/page-up2.svg);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up visible {
+    opacity: 1;
+} 
+
+
 
 /*Style INDEX*/
 .main {
@@ -434,6 +465,7 @@ text-decoration: none;
     line-height: 18px;
     border: 1px solid;
     border-color: #FBB731;
+    transition: 0.3s;
     } 
  .content-link:hover,
  .promo a:hover {
@@ -441,8 +473,8 @@ text-decoration: none;
     background-color: transparent;
  }    
 .visual-bg {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     justify-content: flex-end;
     position: relative;
 }
@@ -496,7 +528,6 @@ text-decoration: none;
     font-weight: 900;
     margin-bottom: 12px;
     margin-top: 0;
-    
 }
 .promo-description {
     font-family: 'Open Sans', sans-serif;
