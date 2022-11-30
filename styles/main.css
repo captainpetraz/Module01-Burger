@@ -332,6 +332,11 @@ text-decoration: none;
     height: 56px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1.5s;
+}
+.footer-logo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .footer-item h2 {
     font-weight: 800;
@@ -353,10 +358,10 @@ text-decoration: none;
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
-    transition: 0.3s;  
+    transition: 0.5s;  
 }
 .footer-list a:hover {
-    color: #FBB731;
+    color: #FBB731;  
 }
 .footer-item span {
     font-size: 15px;
